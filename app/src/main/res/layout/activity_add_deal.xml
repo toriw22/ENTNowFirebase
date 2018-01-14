@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chico_ent.layout.addDeal">
+
+    <EditText
+        android:id="@+id/dealName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="Deal Name"
+        android:layout_margin="@dimen/halfspacing" />
+
+    <EditText
+        android:id="@+id/dealDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/dealName"
+        android:ems="10"
+        android:hint="Deal Description"
+        android:layout_margin="@dimen/halfspacing" />
+
+    <EditText
+        android:id="@+id/dealPictureURL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/dealDescription"
+        android:ems="10"
+        android:hint="Picture URL"
+        android:layout_margin="@dimen/halfspacing" />
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dealPictureURL"
+        android:layout_centerHorizontal="true"
+        android:elevation="24dp"
+        android:layout_margin="@dimen/halfspacing"
+        android:text="Create Deal" />
+
+</RelativeLayout>

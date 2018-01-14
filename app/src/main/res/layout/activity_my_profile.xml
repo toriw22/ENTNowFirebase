@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chico_ent.layout.myProfile">
+
+    <RelativeLayout
+        android:id="@+id/meta_info"
+        android:layout_width="match_parent"
+        android:layout_height="82dp">
+        <com.facebook.login.widget.ProfilePictureView
+            android:id="@+id/profile_picture"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="16dp"/>
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/profile_picture"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            android:textSize="34sp"/>
+    </RelativeLayout>
+    <ListView
+        android:id="@+id/points_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/meta_info"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

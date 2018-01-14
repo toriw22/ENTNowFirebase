@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <declare-styleable name="ScComponents">
+        <attr name="angleStart" format="float" />
+        <attr name="angleSweep" format="float" />
+        <attr name="strokeSize" format="dimension" />
+        <attr name="progressSize" format="dimension" />
+        <attr name="value" format="float" />
+        <attr name="notches" format="float" />
+        <attr name="notchesLength" format="dimension" />
+        <attr name="textTokens" format="string" />
+        <attr name="pointerRadius" format="dimension" />
+    </declare-styleable>*-->
+</resources>

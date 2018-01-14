@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:sc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:gauge="http://schemas.android.com/apk/res-auto"
+    tools:context="com.chico_ent.layout.SingleItem">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:maxHeight="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing"
+            android:layout_below="@+id/background"
+            android:id="@+id/content"
+            android:layout_alignParentEnd="true">
+
+            <TextView
+                android:id="@+id/name"
+                android:textStyle="bold"
+                android:textSize="34sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_business_name"
+                android:layout_marginBottom="3dp" />
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:text="@string/sample_business_time" />
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sample_business_description" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.sccomponents.gauges.ScArcGauge
+                    android:layout_width="135dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gauge"
+                    android:padding="16dp"
+                    sc:progressColor="@color/colorAccent"
+                    sc:strokeColor="@color/colorPrimary"
+                    sc:angleStart="135"
+                    sc:angleSweep="270"
+                    sc:strokeSize="6dp"
+                    sc:progressSize="14dp"
+                    sc:value="45"
+                    sc:pointerRadius="0dp" />
+                <TextView
+                    android:id="@+id/pointsEarned"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical" />
+            </LinearLayout>
+
+            <!--<LinearLayout
+                android:id="@+id/dealInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:text="@string/availability" />
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*" >
+                    <TableRow>
+                        <TextView
+                            android:id="@+id/sunday"
+                            android:text="@string/sunday"
+                            android:background="@color/red"
+                            android:textColor="@color/white"
+                            android:padding="3dp"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/monday"
+                            android:text="@string/monday"
+                            android:background="@color/red"
+                            android:textColor="@color/white"
+                            android:padding="3dp"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/tuesday"
+                            android:text="@string/tuesday"
+                            android:background="@color/red"
+                            android:textColor="@color/white"
+                            android:padding="3dp"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/wednesday"
+                            android:text="@string/wednesday"
+                            android:background="@color/red"
+                            android:textColor="@color/white"
+                            android:padding="3dp"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/thursday"
+                            android:text="@string/thursday"
+                            android:background="@color/red"
+                            android:textColor="@color/white"
+                            android:padding="3dp"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/friday"
+                            android:text="@string/friday"
+                            android:background="@color/red"
+                            android:textColor="@color/white"
+                            android:padding="3dp"
+                            android:gravity="center" />
+                        <TextView
+                            android:id="@+id/saturday"
+                            android:text="@string/saturday"
+                            android:background="@color/red"
+                            android:padding="3dp"
+                            android:textColor="@color/white"
+                            android:gravity="center" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>-->
+
+            <Button
+                android:id="@+id/submitCheckIn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/check_in_to_earn_points" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/current_deals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/content"
+            android:visibility="gone" >
+            <TextView
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:padding="@dimen/spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/current_deals" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>
